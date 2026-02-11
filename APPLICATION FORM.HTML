@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content width=device width, initial-scale="1.0">
+    <title>Company Registration & Service Request</title>
+</head>
+<body>
+
+    <h1>MARVEL TECHNOLOGIES</h1>
+    <h2>Job Application Form:</h2>
+    <p>Pleas fill in the infortaion below as required</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+        
+                <label for="full-name">Full Name;</label><br>
+                <input type="text" id="full-name" name="full-name" required><br><br/>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br/>
+
+                <label for="phone">Phone Number (Format: +254 7********):</label><br>
+                <input type="tel" id="phone" name="phone" pattern="(+254 7********8)" required><br><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Company Information</strong></legend>
+
+                <label for="company-name">Company Name:</label><br>
+                <input type="text" id="company name" name="company name" required><br><br/>
+
+                <label for="website">Company Website:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://MarvelTech.com"><br><br/>
+
+                <label for="company-size">Company Size:</label><br>
+                <select id="company-size" name="company-size" required><br><br>
+                    <option value="">--Please choose an option--</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201+">201+ employees</option>
+                </select><br><br/>
+
+                <label for="industry">Industry:</label><br>
+                <input type="text" id="industry" name="industry" required><br><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Service Request</legend>
+               <label>Select Job Position:</label>
+            <select name="job" required>
+            <option value="">-- Choose Job --</option>
+            <option>Software Developer</option>
+            <option>Internet Service Provider</option>
+            <option>Network Administrator</option>
+            <option>Marketing Officer</option>
+            <option>IT Support</option>
+             </select><br></br>
+
+                <strong>Preferred Contact Method:</strong><br>
+                <input type="checkbox" id="contact email" name="contact preferred" value="email">
+                <label for="contact email">Email</label><br>
+                <input type="checkbox" id="contact phone" name="contact preferred" value="phone">
+                <label for="contact phone">Phone</label><br><br/>
+
+                <label for="appointment-date">Appointment Date:</label><br>
+                <input type="date" id="appointment date" name="appointment date" min="2026-01-01" required><br><br/>
+
+                <label for="appointment-time">Appointment Time:</label><br>
+                <input type="time" id="appointment-time" name="appointment-time" required><br><br/>
+
+                <label for="budget">Budget Range (80,000KSH - 120,000KSH):</label><br>
+                <input type="number" id="budget" name="budget" min="100" max="10000" step="100" required><br><br/>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Message and Agreement</strong></legend>
+
+                <label for="additional-info">Additional Information:</label><br>
+                <textarea id="additional-info" name="additional-info" rows="5" cols="40" maxlength="500"></textarea><br><br/>
+                <label>Upload CV:</label><br>
+                <input type="file" name="cv"><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions</label><br><br/>
+        
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
+        
+
+    </form>
+
+</body>
+</html>
